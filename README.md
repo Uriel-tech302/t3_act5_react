@@ -1,16 +1,21 @@
-# React + Vite
+# Lista de Tareas - Actividad 5: Introducción a React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una mini aplicación de Lista de Tareas construida con React y Vite. Permite agregar nuevas tareas y eliminarlas, demostrando el uso de componentes funcionales, props, manejo del estado y renderizado de listas.
 
-Currently, two official plugins are available:
+## Respuestas al cuestionario
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**a) ¿Qué diferencia hay entre props y state en React?**
+Los `props` (propiedades) se utilizan para pasar información de un componente padre a un componente hijo y son de solo lectura (inmutables). El `state` (estado) es información interna de un componente que puede cambiar a lo largo del tiempo debido a la interacción del usuario; cuando el estado cambia, el componente se vuelve a renderizar.
 
-## React Compiler
+**b) ¿Por qué es importante usar una key al renderizar una lista de elementos?**
+La `key` ayuda a React a identificar de forma única qué elementos de una lista han cambiado, han sido agregados o han sido eliminados. Esto mejora enormemente el rendimiento porque React solo actualiza en el DOM los elementos específicos que se modificaron, en lugar de volver a renderizar toda la lista.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**c) Explica con tus propias palabras qué hace la función useState y da un ejemplo de dónde la usaste en tu mini aplicación.**
+`useState` es un "Hook" de React que nos permite agregar variables de estado a componentes funcionales. Devuelve un arreglo con dos valores: la variable con el estado actual y una función para actualizar esa variable. 
+*Ejemplo en la mini aplicación:* Lo utilicé en `App.jsx` (`const [tasks, setTasks] = useState(...)`) para almacenar el arreglo de tareas. Cuando el usuario agrega o borra una tarea, llamo a `setTasks` para actualizar la lista y que la pantalla refleje los cambios inmediatamente.
 
-## Expanding the ESLint configuration
+**d) Enlace del repositorio de GitHub:**
+[Pega aquí la URL de tu repositorio, ej: https://github.com/tu-usuario/t3_act5_react]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**e) Enlace del proyecto desplegado en GitHub Pages:**
+[Pega aquí la URL de tu GitHub Pages, ej: https://tu-usuario.github.io/t3_act5_react/]
