@@ -15,7 +15,7 @@ La `key` ayuda a React a identificar de forma única qué elementos de una lista
 *Ejemplo en la mini aplicación:* Lo utilicé en `App.jsx` (`const [tasks, setTasks] = useState(...)`) para almacenar el arreglo de tareas. Cuando el usuario agrega o borra una tarea, llamo a `setTasks` para actualizar la lista y que la pantalla refleje los cambios inmediatamente.
 
 **d) Enlace del repositorio de GitHub:**
-[Pega aquí la URL de tu repositorio, ej: https://github.com/tu-usuario/t3_act5_react]
+[https://github.com/Uriel-tech302/t3_act5_react]
 
 **e) Enlace del proyecto desplegado en GitHub Pages:**
-[Pega aquí la URL de tu GitHub Pages, ej: https://tu-usuario.github.io/t3_act5_react/]
+[https://uriel-tech302.github.io/t3_act5_react/]
